@@ -1,0 +1,9 @@
+<h1>Arrangements</h1>
+
+  <div ng-repeat="arrangement in flowers | orderBy:'-category'"">
+      
+      <h2>{{arrangement.title}}</h2>
+      <p>{{arrangement.description}}</p>
+      <h5>{{arrangement.category}}</h5>
+      <h5>${{arrangement.price}}</h5>
+  </div>
